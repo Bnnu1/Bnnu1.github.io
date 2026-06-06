@@ -32,6 +32,13 @@ jobs:
       - name: Build site
         run: cargo run --release
 
+      - name: Debug output
+        run: |
+          pwd
+          ls -la
+          ls -la dist
+          find dist
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

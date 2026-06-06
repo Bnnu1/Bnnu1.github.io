@@ -41,6 +41,7 @@ fn main() {
     };
 
     fs::create_dir_all("dist").expect("failed to create dist directory");
+    fs::write("dist/.nojekyll", "").unwrap();
 
     fs::write(
         "dist/index.html",

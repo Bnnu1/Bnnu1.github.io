@@ -1,0 +1,54 @@
+/* CSS */
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+
+:root {
+	--primary: #c77f44;
+	--background: #f1eedd;
+	--accent: #577889;
+}
+
+html {
+	background-color: var(--background);
+	color: var(--primary);
+	font-family: "Fira Code", monospace;
+	font-weight: 500;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#hero,
+#about,
+#projects,
+#contact,
+#links,
+footer {
+	width: min(700px, 90%);
+	margin: 50px auto;
+  	padding: 0;
+	text-align: center;
+}
+
+.card {
+	border: 2px solid var(--accent);
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+
+a {
+	text-decoration: var(--accent);
+	color: var(--accent);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+	margin-top: 80px;
+	margin-bottom: 20px;
+}

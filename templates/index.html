@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{ name }}</title>
+
+		<link rel="stylesheet" href="static/index.css">
+	</head>
+
+	<body>
+		<main>
+			<section id="hero">
+				<h1>{{ name }}</h1>
+				<p class="tagline">{{ tagline }}</p>
+			</section>
+
+			<section id="about">
+				<h2>About</h2>
+				<p>{{ about }}</p>
+			</section>
+
+			<section id="projects">
+				<h2>Projects</h2>
+
+				{% for project in projects %}
+				<div class="card">
+					<h3>{{ project.name }}</h3>
+					<p>{{ project.description }}</p>
+					<a href="{{ project.github }}">GitHub</a>
+				</div>
+				{% endfor %}
+			</section>
+
+			<section id="contact">
+				<h2>Contact</h2>
+				<a href="mailto:bnnui@mailbox.org">{{ email }}</a>
+			</section>
+
+			<section id="links">
+				<h2>Links</h2>
+				<a href="{{ github }}">GitHub</a>
+			</section>
+		</main>
+		<footer>{{ name }} {{ year }}</footer>
+	</body>
+</html>

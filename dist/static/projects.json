@@ -1,0 +1,14 @@
+[
+	{
+		"name": "lunar",
+		"description": 
+			"Rust AUR helper",
+		"github": "https://github.com/Bnnu1/lunar"
+	},
+	{
+		"name": "selene",
+		"description": 
+			"Rust TUI File Manager",
+		"github": "https://github.com/Bnnu1/selene"
+	}
+]
